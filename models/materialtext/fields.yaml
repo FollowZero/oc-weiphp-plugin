@@ -1,0 +1,6 @@
+fields:
+    content:
+        label: 文本内容
+        span: full
+        size: large
+        type: textarea

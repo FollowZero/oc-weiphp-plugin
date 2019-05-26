@@ -1,0 +1,36 @@
+<ul class="material_list js-masonry" data-masonry-options="" style="">
+<?php if($record->child){ ?>
+    <!-- 多图文 -->
+    <li class="appmsg_li">
+        <div class="appmsg_item">
+            <p class="title"><?= $record['created_at'] ?></p>
+            <div class="main_img">
+                <img src="<?= $record['cover']['path'] ?>">
+                <h6><?= $record['title'] ?></h6>
+            </div>
+            <p class="desc ellipsis"><?= $record['intro'] ?></p>
+        </div>
+    <?php foreach ($record->child as $vo): ?>
+        <div class="appmsg_sub_item">
+            <p class="title ellipsis"><?= $vo['title'] ?></p>
+            <div class="main_img">
+
+            </div>
+        </div>
+    <?php endforeach ?>
+    </li>
+<?php }else{?>
+    <!-- 单图文 -->
+    <li class="appmsg_li">
+        <div class="appmsg_item">
+            <h6 class="ellipsis"><?= $record['title'] ?></h6>
+            <p class="title"><?= $record['created_at'] ?></p>
+            <div class="main_img">
+                <img src="<?= $record['cover']['path'] ?>">
+            </div>
+            <p class="desc ellipsis"><?= $record['intro'] ?></p>
+        </div>
+    </li>
+<?php } ?>
+</ul>
+

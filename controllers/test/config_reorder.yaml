@@ -1,0 +1,4 @@
+title: Test
+modelClass: Plus\Weiphp\Models\AutoReply
+toolbar:
+    buttons: reorder_toolbar

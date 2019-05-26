@@ -1,0 +1,10 @@
+name: MaterialText
+form: $/plus/weiphp/models/materialtext/fields.yaml
+modelClass: Plus\Weiphp\Models\MaterialText
+defaultRedirect: plus/weiphp/materialtext
+create:
+    redirect: 'plus/weiphp/materialtext/update/:id'
+    redirectClose: plus/weiphp/materialtext
+update:
+    redirect: plus/weiphp/materialtext
+    redirectClose: plus/weiphp/materialtext

@@ -1,0 +1,9 @@
+columns:
+    id:
+        label: id
+        type: text
+    cover:
+        label: 图片
+        type: partial
+        sortable: false
+        path: ~/plugins/plus/weiphp/models/materialimage/_cover_column.htm

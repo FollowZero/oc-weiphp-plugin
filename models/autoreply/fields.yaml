@@ -1,0 +1,83 @@
+fields:
+    keyword:
+        label: 关键词
+        span: full
+        type: text
+    msg_type:
+        label: 选择类型
+        options:
+            text: 文本
+            img: 图片
+            news: 图文
+            voice: 语音
+            video: 视频
+        span: full
+        type: radio
+    text_id:
+        label: 文本素材
+        nameFrom: content
+        descriptionFrom: description
+        list: $/plus/weiphp/models/materialtext/columns.yaml
+        span: full
+        type: recordfinder
+        useRelation: false
+        modelClass: Plus\Weiphp\Models\MaterialText
+        trigger:
+            action: show
+            field: msg_type
+            condition: value[text]
+    img_id:
+        label: 图片素材
+        nameFrom: id
+        descriptionFrom: description
+        list: $/plus/weiphp/models/materialimage/columns.yaml
+        conditions: media_id != '0'
+        span: full
+        type: recordfinder
+        useRelation: false
+        modelClass: Plus\Weiphp\Models\MaterialImage
+        trigger:
+            action: show
+            field: msg_type
+            condition: value[img]
+    news_id:
+        label: 图文素材
+        nameFrom: title
+        descriptionFrom: description
+        list: $/plus/weiphp/models/materialnews/columns.yaml
+        span: full
+        type: recordfinder
+        useRelation: false
+        modelClass: Plus\Weiphp\Models\MaterialNews
+        trigger:
+            action: show
+            field: msg_type
+            condition: value[news]
+    voice_id:
+        label: 语音素材
+        nameFrom: title
+        descriptionFrom: description
+        list: $/plus/weiphp/models/materialfile/columns.yaml
+        conditions: type = 1
+        span: full
+        type: recordfinder
+        useRelation: false
+        modelClass: Plus\Weiphp\Models\MaterialFile
+        trigger:
+            action: show
+            field: msg_type
+            condition: value[voice]
+    video_id:
+        label: 视频素材
+        nameFrom: title
+        descriptionFrom: description
+        list: $/plus/weiphp/models/materialfile/columns2.yaml
+        conditions: type = 2
+        span: full
+        type: recordfinder
+        useRelation: false
+        modelClass: Plus\Weiphp\Models\MaterialFile
+        trigger:
+            action: show
+            field: msg_type
+            condition: value[video]

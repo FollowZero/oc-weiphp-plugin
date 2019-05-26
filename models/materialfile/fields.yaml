@@ -1,0 +1,14 @@
+fields:
+    file:
+        label: 上传文件
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        type: fileupload
+    title:
+        label: 素材名称
+        span: full
+        type: text

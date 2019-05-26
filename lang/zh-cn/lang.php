@@ -1,0 +1,48 @@
+<?php return [
+    'plugin' => [
+        'name' => 'WeiPHP',
+        'description' => '',
+    ],
+    'wecome' => [
+        'menu_label' => '欢迎语设置',
+    ],
+    'custom_menu' => [
+        'menu_label' => '自定义菜单',
+    ],
+    'auto_reply' => [
+        'menu_label' => '自定义回复',
+    ],
+    'material' => [
+        'menu_label' => '素材管理',
+        'material_news' => '图文素材',
+        'material_image' => '图片素材',
+        'material_voice' => '语音素材',
+        'material_video' => '视频素材',
+        'material_text' => '文本素材',
+    ],
+    'settings' => [
+        'menu_label' => '公众号配置',
+        'menu_description' => '公众号配置.',
+        'public_type' => '公众号类型',
+        'public_type_comment' => '(请正确选择，公众号类型对应的接口如果没有权限，相关的功能将不显示)',
+        'public_name' => '公众号名称',
+        'public_id' => '原始ID',
+        'public_id_comment' => '(请正确填写，保存后不能再修改，且无法接收到微信的信息)',
+        'public_token' => 'Token',
+        'public_token_comment' => '(令牌)',
+        'appid' => 'AppID',
+        'appid_comment' => '(应用ID)',
+        'secret' => 'AppSecret',
+        'secret_comment' => '(应用密钥)',
+        'encodingaeskey' => 'EncodingAESKey',
+        'encodingaeskey_comment' => '(安全模式下必填)',
+        'zjxx_tab' => '1.增加基本信息',
+        'pzpt_tab' => '2.配置公众平台',
+        'bcpz_tab' => '3.保存接口配置',
+        'public_type_0' => '普通订阅号',
+        'public_type_1' => '微信认证订阅号',
+        'public_type_2' => '普通服务号',
+        'public_type_3' => '微信认证服务号',
+    ],
+    'type' => 'text',
+];

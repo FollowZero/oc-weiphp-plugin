@@ -1,0 +1,8 @@
+cover:
+  label: cover
+  view:
+    form: $/plus/weiphp/models/materialimage/fields.yaml
+    toolbarButtons: update|delete
+  manage:
+    form: $/plus/weiphp/models/materialimage/fields.yaml
+    list: $/plus/weiphp/models/materialimage/columns.yaml

@@ -1,0 +1,7 @@
+columns:
+    id:
+        label: 编号
+        type: text
+    content:
+        label: 文本内容
+        type: text

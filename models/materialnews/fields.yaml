@@ -1,0 +1,85 @@
+tabs:
+    fields:
+        title:
+            label: 标题
+            span: full
+            type: text
+            tab: 主图文
+        author:
+            label: 作者
+            span: full
+            type: text
+            tab: 主图文
+        cover:
+            label: 封面图片
+            mode: image
+            imageWidth: '100'
+            imageHeight: '100'
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: full
+            type: fileupload
+            tab: 主图文
+        intro:
+            label: 摘要
+            size: small
+            span: full
+            type: textarea
+            tab: 主图文
+        content:
+            label: 内容
+            size: large
+            span: full
+            type: richeditor
+            comment: '（图片命名不能有特殊符号；图文不同步到微信素材库时可使用动态替换字符， {@nickname}代表粉丝昵称，{@openid}代表粉丝在公众号下的唯一标识openid）'
+            tab: 主图文
+        link:
+            label: 外链
+            span: full
+            type: text
+            tab: 主图文
+        child:
+            label: 子图文
+            prompt: 添加图文
+            maxItems: '8'
+            span: auto
+            type: repeater
+            tab: 子图文
+            form:
+                fields:
+                    title:
+                        label: 标题
+                        span: full
+                        type: text
+                    author:
+                        label: 作者
+                        span: full
+                        type: text
+                    cover_cd:
+                        label: 封面图片
+                        mode: image
+                        imageWidth: '100'
+                        imageHeight: '100'
+                        useCaption: true
+                        thumbOptions:
+                            mode: crop
+                            extension: auto
+                        span: full
+                        type: fileupload
+                    intro:
+                        label: 摘要
+                        size: small
+                        span: full
+                        type: textarea
+                    content:
+                        label: 内容
+                        size: large
+                        span: full
+                        type: richeditor
+                        comment: '（图片命名不能有特殊符号；图文不同步到微信素材库时可使用动态替换字符， {@nickname}代表粉丝昵称，{@openid}代表粉丝在公众号下的唯一标识openid）'
+                    link:
+                        label: 外链
+                        span: full
+                        type: text

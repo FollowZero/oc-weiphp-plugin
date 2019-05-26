@@ -1,0 +1,10 @@
+name: MaterialImage
+form: $/plus/weiphp/models/materialimage/fields.yaml
+modelClass: Plus\Weiphp\Models\MaterialImage
+defaultRedirect: plus/weiphp/materialimage
+create:
+    redirect: 'plus/weiphp/materialimage/update/:id'
+    redirectClose: plus/weiphp/materialimage
+update:
+    redirect: plus/weiphp/materialimage
+    redirectClose: plus/weiphp/materialimage

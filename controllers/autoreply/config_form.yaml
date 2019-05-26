@@ -1,0 +1,10 @@
+name: AutoReply
+form: $/plus/weiphp/models/autoreply/fields.yaml
+modelClass: Plus\Weiphp\Models\AutoReply
+defaultRedirect: plus/weiphp/autoreply
+create:
+    redirect: 'plus/weiphp/autoreply/update/:id'
+    redirectClose: plus/weiphp/autoreply
+update:
+    redirect: plus/weiphp/autoreply
+    redirectClose: plus/weiphp/autoreply

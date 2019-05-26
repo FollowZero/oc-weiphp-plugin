@@ -1,0 +1,10 @@
+name: MaterialVideo
+form: $/plus/weiphp/models/materialfile/fields2.yaml
+modelClass: Plus\Weiphp\Models\MaterialFile
+defaultRedirect: plus/weiphp/materialvideo
+create:
+    redirect: 'plus/weiphp/materialvideo/update/:id'
+    redirectClose: plus/weiphp/materialvideo
+update:
+    redirect: plus/weiphp/materialvideo
+    redirectClose: plus/weiphp/materialvideo

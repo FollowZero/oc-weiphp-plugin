@@ -1,0 +1,20 @@
+fields:
+    title:
+        label: 素材名称
+        span: full
+        type: text
+    file:
+        label: 上传文件
+        mode: file
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: full
+        type: fileupload
+    introduction:
+        label: 描述
+        size: large
+        span: full
+        type: textarea
+        comment: '（可使用动态替换字符， {@nickname}代表粉丝昵称，{@openid}代表粉丝在公众号下的唯一标识openid）'

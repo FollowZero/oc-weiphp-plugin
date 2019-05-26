@@ -1,0 +1,9 @@
+<?php if($record->file){ ?>
+<div data-control="media-preview-container">
+    <video src="<?= $value['path'] ?>" controls="" poster="" style="max-height: 225px;">
+        <div class="panel media-player-fallback">Your browser doesn't support HTML5 video.</div>
+    </video>
+</div>
+<?php } ?>
+
+

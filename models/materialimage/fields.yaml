@@ -1,0 +1,12 @@
+fields:
+    cover:
+        label: 图片
+        span: full
+        mode: image
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        imageWidth: '100'
+        imageHeight: '100'
+        type: fileupload

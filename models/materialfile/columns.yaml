@@ -1,0 +1,9 @@
+columns:
+    title:
+        label: 名称
+        type: text
+    file:
+        label: 音频
+        type: partial
+        sortable: false
+        path: ~/plugins/plus/weiphp/models/materialfile/_file_column.htm

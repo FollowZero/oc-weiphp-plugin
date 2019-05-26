@@ -1,0 +1,29 @@
+<?php
+    switch ($record->msg_type){
+    case 'text':
+?>
+    <?= $record->material_text->content ?>
+<?php
+    break;
+    case 'img':
+?>
+    <img src="<?= $record->material_img->cover->path ?>">
+<?php
+    break;
+    case 'news':
+?>
+    <?= $record->material_news->title ?>
+<?php
+    break;
+    case 'voice':
+?>
+    <?= $record->material_voice->title ?>
+<?php
+    break;
+    case 'video':
+?>
+    <?= $record->material_video->title ?>
+<?php
+    break;
+    }
+?>

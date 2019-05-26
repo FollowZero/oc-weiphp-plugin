@@ -1,0 +1,4 @@
+title: MaterialImage
+modelClass: Plus\Weiphp\Models\MaterialImage
+toolbar:
+    buttons: reorder_toolbar

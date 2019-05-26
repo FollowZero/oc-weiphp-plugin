@@ -1,0 +1,33 @@
+plugin:
+    name: 'plus.weiphp::lang.plugin.name'
+    description: 'plus.weiphp::lang.plugin.description'
+    author: plus
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Menu Item'
+        url: plus/weiphp/materialtext
+        icon: icon-align-justify
+        sideMenu:
+            side-menu-item:
+                label: 欢迎语设置
+                url: /
+                icon: icon-sitemap
+            side-menu-item2:
+                label: 自定义菜单
+                url: /
+                icon: icon-sitemap
+            side-menu-item3:
+                label: 自定义回复
+                url: plus/weiphp/material
+                icon: icon-sitemap
+            side-menu-item4:
+                label: 素材管理
+                url: plus/weiphp/materialtext
+                icon: icon-sitemap
+                sideMenu:
+                    side-menu-item:
+                        label: 欢迎语设置
+                        url: /
+                        icon: icon-sitemap

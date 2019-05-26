@@ -1,0 +1,50 @@
+tabs:
+  fields:
+    # 公众号类型
+    public_type:
+      span: left
+      label: plus.weiphp::lang.settings.public_type
+      comment: plus.weiphp::lang.settings.public_type_comment
+      type: dropdown
+      tab: plus.weiphp::lang.settings.zjxx_tab
+    # 公众号名称
+    public_name:
+      span: left
+      label: plus.weiphp::lang.settings.public_name
+      type: text
+      tab: plus.weiphp::lang.settings.zjxx_tab
+    # 原始ID
+    public_id:
+      span: left
+      label: plus.weiphp::lang.settings.public_id
+      comment: plus.weiphp::lang.settings.public_id_comment
+      type: text
+      tab: plus.weiphp::lang.settings.zjxx_tab
+    # 配置公众平台
+    public_token:
+      span: left
+      label: plus.weiphp::lang.settings.public_token
+      comment: plus.weiphp::lang.settings.public_token_comment
+      type: text
+      tab: plus.weiphp::lang.settings.pzpt_tab
+    # AppID
+    appid:
+      span: left
+      label: plus.weiphp::lang.settings.appid
+      comment: plus.weiphp::lang.settings.appid_comment
+      type: text
+      tab: plus.weiphp::lang.settings.bcpz_tab
+    # AppSecret
+    secret:
+      span: left
+      label: plus.weiphp::lang.settings.secret
+      comment: plus.weiphp::lang.settings.secret_comment
+      type: text
+      tab: plus.weiphp::lang.settings.bcpz_tab
+    # EncodingAESKey
+    encodingaeskey:
+      span: left
+      label: plus.weiphp::lang.settings.encodingaeskey
+      comment: plus.weiphp::lang.settings.encodingaeskey_comment
+      type: text
+      tab: plus.weiphp::lang.settings.bcpz_tab

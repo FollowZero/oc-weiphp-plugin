@@ -1,0 +1,9 @@
+columns:
+    keyword:
+        label: 关键词
+        type: text
+    reply_content:
+        label: 回复内容
+        type: partial
+        sortable: false
+        path: ~/plugins/plus/weiphp/models/autoreply/_reply_content_column.htm

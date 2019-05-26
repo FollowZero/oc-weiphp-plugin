@@ -1,0 +1,4 @@
+title: MaterialText
+modelClass: Plus\Weiphp\Models\MaterialText
+toolbar:
+    buttons: reorder_toolbar

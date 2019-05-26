@@ -1,0 +1,35 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table plus_weiphp_material_text'
+    - builder_table_create_plus_weiphp_material_text.php
+1.0.3:
+    - 'Updated table plus_weiphp_material_text'
+    - builder_table_update_plus_weiphp_material_text.php
+1.0.4:
+    - 'Created table plus_weiphp_material_image'
+    - builder_table_create_plus_weiphp_material_image.php
+1.0.5:
+    - 'Created table plus_weiphp_auto_reply'
+    - builder_table_create_plus_weiphp_auto_reply.php
+1.0.6:
+    - 'Updated table plus_weiphp_auto_reply'
+    - builder_table_update_plus_weiphp_auto_reply.php
+1.0.7:
+    - 'Created table plus_weiphp_material_file'
+    - builder_table_create_plus_weiphp_material_file.php
+1.0.8:
+    - 'Created table plus_weiphp_news'
+    - builder_table_create_plus_weiphp_news.php
+1.0.9:
+    - 'Updated table plus_weiphp_news'
+    - builder_table_update_plus_weiphp_material_news.php
+1.0.10:
+    - 'Updated table plus_weiphp_material_file'
+    - builder_table_update_plus_weiphp_material_file.php
+1.0.11:
+    - 'Updated table plus_weiphp_auto_reply'
+    - builder_table_update_plus_weiphp_auto_reply_2.php
+1.0.12:
+    - 'Updated table plus_weiphp_material_news'
+    - builder_table_update_plus_weiphp_material_news_2.php

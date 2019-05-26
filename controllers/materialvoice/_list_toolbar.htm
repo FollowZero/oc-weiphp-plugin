@@ -1,0 +1,33 @@
+<div data-control="toolbar">
+        <a href="<?= Backend::url('plus/weiphp/materialvoice/create') ?>" class="btn btn-primary oc-icon-plus"><?= e(trans('backend::lang.form.create')) ?></a>
+            <button
+        class="btn btn-default oc-icon-trash-o"
+        disabled="disabled"
+        onclick="$(this).data('request-data', {
+            checked: $('.control-list').listWidget('getChecked')
+        })"
+        data-request="onDelete"
+        data-request-confirm="<?= e(trans('backend::lang.list.delete_selected_confirm')) ?>"
+        data-trigger-action="enable"
+        data-trigger=".control-list input[type=checkbox]"
+        data-trigger-condition="checked"
+        data-request-success="$(this).prop('disabled', true)"
+        data-stripe-load-indicator>
+        <?= e(trans('backend::lang.list.delete_selected')) ?>
+    </button>
+    <div class="btn-group offset-right">
+        <button type="button" class="btn btn-default" data-request="onSycVoiceToWechat">
+            一键上传素材到微信素材库
+        </button>
+        <!--<button type="button" class="btn btn-default" data-request="onSycFileFromWechat">
+            一键下载微信素材库到本地
+        </button>-->
+    </div>
+    <div class="btn-group" id="">
+        <a href="<?= Backend::url('plus/weiphp/materialnews') ?>" class="btn btn-default"><?= e(trans('plus.weiphp::lang.material.material_news')) ?></a>
+        <a href="<?= Backend::url('plus/weiphp/materialimage') ?>" class="btn btn-default"><?= e(trans('plus.weiphp::lang.material.material_image')) ?></a>
+        <a href="<?= Backend::url('plus/weiphp/materialvoice') ?>" class="btn btn-primary"><?= e(trans('plus.weiphp::lang.material.material_voice')) ?></a>
+        <a href="<?= Backend::url('plus/weiphp/materialvideo') ?>" class="btn btn-default"><?= e(trans('plus.weiphp::lang.material.material_video')) ?></a>
+        <a href="<?= Backend::url('plus/weiphp/materialtext') ?>" class="btn btn-default"><?= e(trans('plus.weiphp::lang.material.material_text')) ?></a>
+    </div>
+</div>

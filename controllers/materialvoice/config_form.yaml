@@ -1,0 +1,10 @@
+name: MaterialVoice
+form: $/plus/weiphp/models/materialfile/fields.yaml
+modelClass: Plus\Weiphp\Models\MaterialFile
+defaultRedirect: plus/weiphp/materialvoice
+create:
+    redirect: 'plus/weiphp/materialvoice/update/:id'
+    redirectClose: plus/weiphp/materialvoice
+update:
+    redirect: plus/weiphp/materialvoice
+    redirectClose: plus/weiphp/materialvoice

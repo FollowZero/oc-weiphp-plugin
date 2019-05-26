@@ -1,0 +1,10 @@
+name: MaterialNews
+form: $/plus/weiphp/models/materialnews/fields.yaml
+modelClass: Plus\Weiphp\Models\MaterialNews
+defaultRedirect: plus/weiphp/materialnews
+create:
+    redirect: 'plus/weiphp/materialnews/update/:id'
+    redirectClose: plus/weiphp/materialnews
+update:
+    redirect: plus/weiphp/materialnews
+    redirectClose: plus/weiphp/materialnews

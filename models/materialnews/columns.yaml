@@ -1,0 +1,9 @@
+columns:
+    id:
+        label: ID
+        type: text
+    child:
+        label: 图文
+        type: partial
+        sortable: false
+        path: ~/plugins/plus/weiphp/models/materialnews/_child_column.htm

@@ -1,0 +1,45 @@
+<?php if($record->child){ ?>
+<?php $cmun=count($value); ?>
+<ul class="material_list js-masonry" data-masonry-options="" style="">
+    <?php if($cmun>1){ ?>
+        <!-- 多图文 -->
+        <li class="appmsg_li">
+            <?php foreach ($value as $ko => $vo): ?>
+                <?php if($ko==0){ ?>
+                    <div class="appmsg_item">
+                        <p class="title"><?= $vo['created_at'] ?></p>
+                        <div class="main_img">
+                            <img src="<?= $vo['cover']['path'] ?>">
+                            <h6><?= $vo['title'] ?></h6>
+                        </div>
+                        <p class="desc ellipsis"><?= $vo['intro'] ?></p>
+                    </div>
+                <?php }else{ ?>
+                    <div class="appmsg_sub_item">
+                        <p class="title ellipsis"><?= $vo['title'] ?></p>
+                        <div class="main_img">
+                            <img src="<?= $vo['cover']['path'] ?>">
+                        </div>
+                    </div>
+                <?php } ?>
+            <?php endforeach ?>
+        </li>
+    <?php }else{ ?>
+        <!-- 单图文 -->
+        <li class="appmsg_li">
+            <?php foreach ($value as $ko => $vo): ?>
+            <div class="appmsg_item">
+                <h6 class="ellipsis"><?= $vo['title'] ?></h6>
+                <p class="title"><?= $vo['created_at'] ?></p>
+                <div class="main_img">
+                    <img src="<?= $vo['cover']['path'] ?>">
+                </div>
+                <p class="desc ellipsis"><?= $vo['intro'] ?></p>
+            </div>
+            <?php endforeach ?>
+        </li>
+    <?php } ?>
+</ul>
+<?php } ?>
+
+
